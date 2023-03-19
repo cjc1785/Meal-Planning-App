@@ -1,0 +1,21 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.calendarContainer {
+  flex: 1;
+  height: 90vh;
+  margin-right: 20px;
+}
+
+.mainContainer {
+  display: flex;
+  height: 90vh;
+  flex-direction: row;
+}
+
+#taskPane {
+  width: 300px;
+  height: 100%;
+}

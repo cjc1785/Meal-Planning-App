@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.calendarContainer {
+  flex: 1;
+  height: 90vh;
+  margin-right: 20px;
+}
+
+.mainContainer {
+  display: flex;
+  height: 90vh;
+  flex-direction: row;
+}
+
+.taskPaneContainer {
+  position: relative;
+  width: 30vh;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+#overlay {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.TaskForm {
+  font-family: Arial, sans-serif;
+}
+
+.TaskForm .modal-header {
+  background-color: #f8f9fa;
+  border-bottom: none;
+}
+
+.TaskForm .modal-body {
+  padding: 20px;
+}
+
+.TaskForm .form-group {
+  margin-bottom: 20px;
+}
+
+.TaskForm .form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.TaskForm .form-group input[type="text"],
+.TaskForm .form-group textarea {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #e9ecef;
+  box-shadow: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.TaskForm .form-group input[type="text"]:focus,
+.TaskForm .form-group textarea:focus {
+  border-color: #007bff;
+  box-shadow: none;
+}
+
+.TaskForm .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-weight: bold;
+}
+
+.TaskForm .btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.TaskForm .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  font-weight: bold;
+}
+
+.TaskForm .btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+.modal-header {
+  position: relative;
+}
+
+.btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
